@@ -2,6 +2,8 @@
 
 The purpose of this utility is to be able to migrate the .gitlab-ci.yml file to bitbucket-pipelines.yml
 
+> Forked from [chrux/gitlab-bitbutcket-cicd](https://github.com/chrux/gitlab-bitbutcket-cicd) to add a couple fixes
+
 ## Dependencies
 
 - Python 2.7.16, 3.5.2 and 3.6.8 (writter for this originally)
