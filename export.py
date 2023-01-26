@@ -113,7 +113,7 @@ def main(source, destination):
                 deployment = get_deployment_env('default')
                 if deployment != 'none':
                     step['deployment'] = deployment
-                bitbucket_pipeline_data['pipelines']['default'].append({ step: step })
+                bitbucket_pipeline_data['pipelines']['default'].append({ 'step': step })
 
     # Let's write the file
     with io.open(bitbucket_pipeline_file, 'w', encoding='utf8') as out:
