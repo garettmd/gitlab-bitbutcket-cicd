@@ -33,7 +33,7 @@ def main(source, destination):
     bitbucket_pipeline_data = {}
     bitbucket_pipeline_data['pipelines'] = {}
     with open(gitlab_ci_file, 'r') as stream:
-        gitlab_ci_data = yaml.load(stream)
+        gitlab_ci_data = yaml.safe_load(stream)
 
         # In case there is no content
         if gitlab_ci_data is None:
